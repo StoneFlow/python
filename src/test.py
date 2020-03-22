@@ -17,3 +17,5 @@ print('My stu_id is %03d' %stu_id)
 print('My name is %s,%d years old' %(name, age))
 # 6.我的名字e，明年c岁了，体重a公斤，学号是e
 print('My name is %s,%d years old,weight %.2f kg'%(name, age + 1, weight))
+
+print(f'My name {name}')
