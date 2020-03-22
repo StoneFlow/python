@@ -6,3 +6,6 @@ schoolName = 'di jia'
 print(schoolName)
 
 
+Student = 'wa zi'
+print(Student)
+
