@@ -1,9 +1,4 @@
-#结束符
+# 输入
 
-print('shuchu')
-print('shuchu', end="\t")
-print('shuchu')
-print('shuchu')
-print('shuchu')
-print('shuchu', end = "...")
-print('shuchu')
+password = input("Please user input password")
+print(f'User password is{password}')
