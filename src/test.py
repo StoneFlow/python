@@ -1,4 +1,6 @@
-# 输入
+# 字符转换
 
-password = input("Please user input password")
-print(f'User password is{password}')
+ni = input("Please input")
+print(ni)
+print(type(ni)) 
+print(type(int(ni)))
