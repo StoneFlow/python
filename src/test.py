@@ -1,4 +1,9 @@
-#转义字符
+#结束符
 
-print('hello\nworld')
-print('\tasdfg')
+print('shuchu')
+print('shuchu', end="\t")
+print('shuchu')
+print('shuchu')
+print('shuchu')
+print('shuchu', end = "...")
+print('shuchu')
