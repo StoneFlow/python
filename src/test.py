@@ -1,10 +1,8 @@
-# 字符运算
+# 赋值运算
 
-print(10+10)
-print(10-10)
-print(10*10)
-print(10/10)
-print(235//10)
-print(244%10)
-print(3*3**2)
+num1, num2, num3 = 1, 2, 3
+print(num1, num2, num3)
 
+num4 = num5 = 10
+print(num4)
+print(num5)
