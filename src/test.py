@@ -12,7 +12,6 @@ if __name__ == "__main__":
     print(rw)
 '''
 
-
 '''
 student = ['Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose']
 print(student)
@@ -30,8 +29,6 @@ print(a & b)
 print(a ^ b)
 '''
 
-
-
 '''
 dict1 = {}
 dict1['noe'] = 1
@@ -42,6 +39,7 @@ print(dict1[2])
 print(tindict)
 print(tindict.keys())
 print(tindict.values())
+print(dict1)
 '''
 '''
 a = 2
@@ -78,18 +76,16 @@ print("6 - c de zhi wei:", c)
 '''
 '''
 a = 0
-b = 2
-
+b = 0
 if( a and b):
     print("a")
 else:
     print("b")
-if not(a and b):
-    print("a")
+if a or b:
+    print('a')
 else:
-    print("b")
+    print('b')
 '''
-
 '''
 a = 10 
 b = 20 
@@ -103,15 +99,12 @@ if(b not in list):
     print("shi de bu zai")
 else:
     print("bushi, zaide ")
-a = 2
-if(a in list):
+b = 2
+if(b in list):
     print("zai")
 else:
     print("buzai")
 '''
-
-
-
 '''
 a = 20
 b = 20 
@@ -125,23 +118,200 @@ if (id(a) == id(b)):
     print("shi")
 else:
     print("bushi")
-if (a is not b):
-    print("bushi")
-else:
+if (a is b):
     print("shi")
+else:
+    print("bushi")
 
 if (a == b):
     print("shi")
 else:
     print("bushi")
-
-d = [1, 2, 3]
-e = d
+'''
+'''
+e = d = [1, 2, 3]
 print(e is d)
 print(e == d)
 e = d[:]
 print(e is d)
 print(e == d)
+'''
+'''
+A = []
+for i in range(101):
+    A.append(i)
+print(A)
+
+for i in A:
+    if i % 2 == 0:
+        A.remove(i)
+print(A) 
+'''
+
+
+'''
+for letter in 'Python':
+    print ('dang',letter)
+
+fruits = ['fefefe', 'appp', 'meee']
+for fruits in fruits:
+    print("dang",fruits)
+
+'''
+'''
+q = []
+for i in range(100):
+    q.append(i)
+print(q)
+
+for o in q:
+    if o % 2 == 0:
+        print(o)
+'''
+'''
+w = [100,1, 2,34,5,6,7,3]
+for index in range(len(w)):
+    print('d', index, w[index])
+'''    
+
+'''
+# 确定选择功能界面，显示余额 存款 取款
+def sel_func():
+    print("yue")
+    print("cunkuan")
+    print("qu kuan")
+
+
+#1，搭建整体框架
+'''
+'''
+输入密码后显示功能，查询余额后显示功能，取完钱后显示功能
+print('qing shu ru')
+#显示“选择功能”界面
+sel_func()
+print('wanbi')
+#显示“选择功能”界面
+sel_func()
+print("qu le")
+#显示“选择功能”界面
+sel_func()
+'''
+
+'''
+def info_print():
+    print("hello world\n")
+
+info_print()
+'''
+
+
+'''
+def add_num1(x, y):
+    result = x + y
+    c = x * y
+    w = x / y
+    f = x % y
+    e = x // y
+    print(result, c, '%0.2f' %w, f, e)
+
+a = 4
+b = 3
+
+add_num1(a, b)
+'''
+
+'''
+def buy(c):
+    return c
+
+a = 20
+print(buy(a))
+'''
+'''
+def sum_num1(x, y):
+    return x + y
+
+a = 20 
+b = 39
+print(sum_num1(a, b))
+'''
+'''
+def sum_num1():
+    """nihao"""
+    return a + b
+
+help(sum_sum1)
+'''
+
+'''
+def sum_num1(a, b):
+    ''''''
+    return a + b
+'''
+'''
+def a():
+    print("a")
+def b():
+    print("b")
+    a()
+    print("b")
+    return 0
+
+b()
+'''
+
+'''
+def print_line():
+    print('-' * 20)
+def print_linec(x):
+    i = 0
+    while i < x:
+        print_line()
+        i += 1
+a = input('xingyunshu')
+a = int(a)
+print_linec(a)
+'''
+'''
+def b():
+    i = 0
+    while i < 5:
+        print(print_line())
+        i += 1
+b()
+'''
+
+'''
+a = 100
+print(a)
+def w():
+    print(a)
+
+def e():
+    global a
+    a = 200
+    print(a)
+
+w()
+e()
+print(a)
+'''
+'''
+def and1(x, y):
+    if x and y:
+        return x
+    else:
+        return y
+
+def or1(x, y):
+    if x or y:
+        return x
+    else:
+        return y
+a = 1
+b = 2
+print(and1(a, b))
+print(or1(a, b))
 '''
 
 
@@ -150,6 +320,46 @@ print(e == d)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
