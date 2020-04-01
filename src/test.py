@@ -1002,46 +1002,72 @@ print(dir())
 a = 5
 dir()
 '''
+'''
+import name
+'''
 
+'''
+my_file = open("ni.txt")
+print(my_file.read())
+'''
+'''
+w = open("ni.txt")
+print(w.read())
+print('*'*20)
+print(w.read())
+e = open("name.py")
+print(e.read())
+print(w.closed)
+w.close()
+print(w.closed)
+e.close()
+w = open("ni.txt")
+print(w.read())
+'''
+'''
+my_file = open("ni.txt")
+print(my_file.read())
+my_file.seek(0)
+print(my_file.readlines())
+my_file.close()
+'''
+'''
+my_file = open("ni.txt",'w')
+my_file.write("hahaha")
+my_file.close()
+my_file = open("ni.txt",'w')
+my_file.write("sigou")
+my_file.close()
+'''
+'''
+my_file = open("ni.txt","a")
+my_file.write("\nADD content")
+my_file.close()
+my_file = open("ni.txt","r")
+print(my_file.read())
+'''
+'''
+my_file = open("New_file.txt","w")
+my_file.write("add")
+my_file.close()
+'''
+'''
+my_file = open("ni.txt","r+")
+my_file.write("HIasdfghjkasdfghjkasdfghjkasdfghjk")
+my_file.close()
+'''
+'''
+with open("ni.txt","a") as my_file:
+    my_file.write("Add other content")
+'''
+'''
+my_file = open("ni.txt")
+print(my_file.read())
+my_file.seek(0)
+print(my_file.readlines())
+'''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+my_file = open("ni1.txt","x")
 
 
 
