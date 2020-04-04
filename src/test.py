@@ -1066,15 +1066,164 @@ print(my_file.read())
 my_file.seek(0)
 print(my_file.readlines())
 '''
-
+'''
 my_file = open("ni1.txt","x")
+'''
+'''
+import name
+from name import *
+'''
+'''
+my_file = open("ni1.txt","r")
+print(my_file.read())
+my_file.close()
+''''''
+my_file = open("ni1.txt","w")
+my_file.write("nihaoya")
+my_file.close()
+'''
+'''
+my_file = open("ni1.txt","r+")
+my_file.write("ni")
+print(my_file.read())
+my_file.close()
+'''
+'''
+import os
+import sys
 
+os.chdir('E:/')
+result = os.getcwd()
+print(result)
+open("ni1.txt","w")
+'''
+'''
+import os
+result = os.listdir('f:/python/src')
+print(result)
+'''
+'''
+import os 
+result = os.listdir('c:/')
+print(result)
+'''
 
+'''
+os.mkdir("f:/nihao",0o777)
+'''
 
+import os
+'''
+result = os.makedirs('f:/a/b/c')
+'''
+'''
+os.rmdir('f:/a/b')
+'''
+'''
+os.removedirs('f:/a/b')
+'''
+'''
+os.rename("f:/www","f:/qqq")
+'''
+'''
+result  = os.stat('f:/qqq')
+print(result)
+'''
+'''
+os.system('ping www.baidu.com')
+'''
+'''
+result = os.getenv('path')
+print(result)
+allpath = result.split(',')
+print(allpath)
+'''
+'''
+os.putenv('path','f:/a/b/c')
 
+result = os.getenv('path')
+print(result)
+'''
+'''
+os.environ['path'] += 'F:/abc/xyz'
+print(os.environ['path'])
+'''
+'''
+print(os.environ['path'])
+'''
+'''
+print(os.curdir)
+print(os.pardir)
+print(os.path)
+print(os.name)
+'''
+'''
+print(os.sep)
+print(os.extsep)
+print(repr(os.linesep))
+'''
+'''
+open('xd1.txt','w')
+open('./xd2.txt','w')
+open('../../xd3.txt','w')
+'''
+'''
+path1 = '../../123.txt'
+print(os.path.abspath(path1))
+'''
+'''
+path1 = 'c:/window/system32/abc.txt'
+result = os.path.basename(path1)
+print(result)
 
-
-
+result2 = os.path.dirname(path1)
+print(result2)
+'''
+'''
+path1 = 'c:\\window\\abc'
+path2 = 'xyz\\123.txt'
+result = os.path.join(path1,path2)
+print(result)
+'''
+'''
+path1 = 'D:/a/b/c/d/xyz.exe'
+result = os.path.split(path1)
+print(result)
+'''
+'''
+path1 = 'D:/a/b/c/d/123.jgb'
+result = os.path.splitext(path1)
+print(result)
+'''
+'''
+path1 = 'D:/python/NEWS.txt'
+result = os.path.getsize(path1)
+print(result)
+'''
+'''
+path1 = 'C:/windows'
+result = os.path.isdir(path1)
+print(result)
+'''
+'''
+path = 'E:/ni1.txt'
+result = os.path.isfile(path)
+print(result)
+'''
+'''
+path = 'e:/ni1.txt'
+result = os.path.getmtime(path)
+print(result)
+'''
+'''
+path = 'c:/123.jpg'
+result = os.path.isabs(path)
+print(result)
+'''
+path1 = './ni1.txt'
+path2 = 'f:/python/src/bao.py'
+result = os.path.samefile(path1,path2)
+print(result)
 
 
 
