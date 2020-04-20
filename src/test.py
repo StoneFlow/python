@@ -11,7 +11,6 @@ if __name__ == "__main__":
     rw = reverseWords(input)
     print(rw)
 '''
-
 '''
 student = ['Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose']
 print(student)
@@ -19,7 +18,8 @@ if 'Rose' in student:
     print('Rose you')
 else:
     print('Rose wu')
-
+'''
+'''
 a = set('abcdefg')
 b = set('abcdhij')
 print(a)
@@ -75,7 +75,7 @@ print("6 - c de zhi wei:", c)
 往右补二进制
 '''
 '''
-a = 0
+a = 1
 b = 0
 if( a and b):
     print("a")
@@ -1135,7 +1135,7 @@ os.system('ping www.baidu.com')
 '''
 result = os.getenv('path')
 print(result)
-allpath = result.split(',')
+allpath = result.split(';')
 print(allpath)
 '''
 '''
@@ -1220,10 +1220,433 @@ path = 'c:/123.jpg'
 result = os.path.isabs(path)
 print(result)
 '''
-path1 = './ni1.txt'
+'''
+path1 = './bao.py'
 path2 = 'f:/python/src/bao.py'
 result = os.path.samefile(path1,path2)
 print(result)
+'''
+'''
+import sys; x = 'runoob'; sys.stdout.write(x + '\n')
+'''
+'''
+a = set('asdfghjkl')
+b = set('asdfghbnm')
+print(a)
+print(a-b)
+print(a|b)
+print(a&b)
+print(a^b)
+'''
+
+'''
+dict1 = {'name': 3, 'sex': 5}
+print(dict1)
+print(dict1.keys())
+print(dict1.values())
+'''
+'''
+var1 = 100
+if var1:
+    print("1 - if ")
+    print(var1)
+var2 = 0
+if var2:
+    print("2 - if")
+    print(var2)
+    print("Good bye")
+else:
+    print("No")
+'''
+'''
+import bao
+'''
+'''
+print(4 == 2)
+x = 5
+y = 8
+print(x == y)
+'''
+'''
+count = 0
+while count < 5:
+    print(count,'5')
+    count += 1
+else:
+    print(count,'5')
+'''
+'''
+wo = []
+for i in range(100):
+    if i %2 == 0 :
+        if i %3 == 0:
+            wo.append(i)
+print(wo)
+'''
+'''
+w = []
+for i in range(10):
+    w.append(i)
+print(w)
+'''
+'''
+for letter in 'runoob':
+    if letter == 'o':
+        break
+
+    print(letter)
+
+var = 10
+while var > 0:
+    print(var)
+    var = var -1
+    if var == 5:
+        break
+print('bye')
+'''
+'''
+for n in range(2,10):
+    for x in range(2,n):
+        if n % x == 0 :
+            print(n,'deng',x,'*',n)
+            break
+        else:
+            print(n,'shi')
+            break
+'''
+'''
+for letter in 'Runoob':
+    if letter == 'o':
+        pass
+        print('zhixing pass kuai')
+    print(letter)
+print('Good bye')
+'''
+'''
+class nihao:
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        if self.a <= 10:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+
+myclass = nihao()
+myiter = iter(myclass)
+
+for x in myiter:
+    print(x)
+'''
+'''
+import sys
+def fibonacci(n):
+    a, b, counter = 0, 1, 0
+    while True:
+        if (counter > n):
+            return
+        yield a
+        a, b = b, a + b
+        counter += 1
+
+f = fibonacci(10)
+
+while True:
+    try:
+        print(next(f),end = ' ')
+    except StopIteration:
+        sys.exit()
+'''
+'''
+def c(a):
+    a = 10
+    return a
+b = 2 
+print(c(b))
+print(b)
+'''
+'''
+def c(mylist):
+    mylist.append([1,2,3,4])
+    print(mylist)
+    return
+mylist = [10,20,30]
+c(mylist)
+print(mylist)
+'''
+'''
+def f( *sex):
+    print(sex)
+
+def z(**dict1):
+    print(dict1)
+z(a=2,b=3)
+'''
+'''
+def f(a,b,*,c):
+    return a + b + c
+print(f(1,2,c=3))
+'''
+'''
+result = lambda x: x * x
+print(result(5))
+'''
+'''
+def Foo(x):
+    if (x==1):
+        return x
+    else:
+        return x * Foo(x-1)
+
+print(Foo(100))
+'''
+'''
+import name
+import bao
+import support
+support.print2(3)
+'''
+'''
+from fibo import fib, fib2
+fib(1000)
+print(fib2(200))
+'''
+'''
+a = [1,2,3,4,5]
+import fibo
+fib = fibo.fib
+print(dir())
+del a
+print(dir())
+'''
+'''
+w = open('ni.txt')
+print(w.read())
+'''
+'''
+w = open('meishi.txt','x')
+w.close()
+'''
+'''
+w = open('meih.txt','a+')
+w.write('\nnidkjalj')
+w.closed
+'''
+'''
+w = open('meih.txt','a+')
+w.write('nihaoya')
+'''
+'''
+print(os.stat('f:/python'))
+'''
+'''
+w = os.path.basename('./ni1.txt')
+e = os.path.dirname('../../python/ni.txt')
+print(os.path.join(e, w))
+print(os.path.split('f:/python/src/name.py'))
+'''
+'''
+x = input('')
+if x == 1:
+    class de:
+        def i(self):
+            print('ni')
+        def u(self):
+            print('hao')
+    w = de()
+    w.i()
+    w.u()
+else:
+    class w:
+        def w(self):
+            print('buhao')
+        def q(self):
+            print('henbuhao')
+    i = w()
+    i.w()
+    i.q()
+'''
+'''
+class fu:
+    name = ''
+    age = 0
+    sex = ''
+    def __init__(self,n,a,s):
+        self.name = n
+        self.age = a
+        self.sex = s
+    def speak(self):
+        print('%s %d'%(self.name, self.age))
+class er(fu):
+    grade = ''
+    def __init__(self,n,a,s,e):
+        fu.__init__(self,n,a,s)
+        self.grade = e
+    def speak1(self):
+        print('%s %d %s %s'%(self.name,self.age,self.sex,self.grade))
+
+w = er(1,2,3,4)
+w.speak1()
+'''
+'''
+class fu:
+    def __init__(self):
+        name = '1'
+        print(name)
+w = fu()
+'''
+'''
+class Parent:
+    def myMethod(self):
+        print('fu')
+class Child(Parent):
+    def myMethod(self):
+        print('zi')
+w = Child()
+w.myMethod()
+super(Child,w).myMethod()
+'''
+'''
+class j:
+    __secretCount = 0
+    publicCout = 0
+
+    def count(self):
+        self.__secretCount += 1
+        self.publicCout += 1
+        print(self.publicCout)
+
+counter = j()
+counter.count()
+counter.count()
+print(counter.publicCout)
+print(counter.__secretCount)
+'''
+'''
+class Site:
+    def __init__(self, name, url):
+        self.name = name
+        self.__url = url
+
+    def who(self):
+        print('name :', self.name)
+        print('url :', self.__url)
+
+    def __foo(self):
+        print('si')
+    
+    def foo(self):
+        print('gong')
+        self.__foo()
+
+x = Site('cai','www.runoob.com')
+x.who()
+x.foo()
+x.__foo()
+'''
+'''
+class Vector:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    
+    def __str__(self):
+        return 'Vector(%d, %d)' %(self.a, self.b)
+
+    def __add__(self, other,other):
+        return Vector(self.a + other.a , self.b + other.b)
+
+v1 = Vector(2,3)
+v2 = Vector(33,22)
+print(v1 + v2)
+'''
+
+w = r'\thabit'
+print(w[2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
